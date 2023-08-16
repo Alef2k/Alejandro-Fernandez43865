@@ -1,0 +1,68 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+<div class="page-banner overlay-dark bg-image" style="background-image: url('{% static "aplicacion/assets/img/bg_image_1.jpg" %}');">
+    <div class="banner-section">
+      <div class="container text-center wow fadeInUp">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
+            <li class="breadcrumb-item"><a href="{% url 'inicio' %}">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Blog</li>
+          </ol>
+        </nav>
+        <h1 class="font-weight-normal">Blog</h1>
+      </div> <!-- .container -->
+    </div> <!-- .banner-section -->
+  </div> <!-- .page-banner -->
+  <div class="page-section py-3 mt-md-n5 custom-index">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card-service wow fadeInUp">
+            <div class="circle-shape bg-secondary text-white">
+              <span class="mai-chatbubbles-outline"></span>
+            </div>
+            <p><span>Chat</span> with a doctors</p>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card-service wow fadeInUp">
+            <div class="circle-shape bg-primary text-white">
+              <span class="mai-shield-checkmark"></span>
+            </div>
+            <p><span>One</span>-Health Protection</p>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card-service wow fadeInUp">
+            <div class="circle-shape bg-accent text-white">
+              <span class="mai-basket"></span>
+            </div>
+            <p><span>One</span>-Health Pharmacy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12 offset-md-0">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">{{ post.titulo }}</h2>
+                    <p class="card-text">{{ post.fecha_publicacion }}</p>
+                    <p class="card-text">Autor: {{ post.autor }}</p>
+                    <p class="card-text">Categoría: {{ post.categoria }}</p>
+                    <p class="card-text">{{ post.contenido }}</p>
+                    <a href="{% url 'lista_posts' %}" class="btn btn-primary">Volver a la lista de posts</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock contenido %}

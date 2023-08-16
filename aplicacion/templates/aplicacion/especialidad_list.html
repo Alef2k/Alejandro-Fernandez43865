@@ -1,0 +1,107 @@
+{% extends 'aplicacion/base.html' %} 
+{% load static %} 
+{% block titulo %}Especialidad{% endblock titulo %} 
+{% block cabecera %}Especialidad {% endblock cabecera %} 
+{% block contenido %}
+<div class="page-banner overlay-dark bg-image" style="background-image: url('{% static "aplicacion/assets/img/bg_image_1.jpg" %}');">
+  <div class="banner-section">
+    <div class="container text-center wow fadeInUp">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
+          <li class="breadcrumb-item"><a href="{% url 'inicio' %}">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">especialidades</li>
+        </ol>
+      </nav>
+      <h1 class="font-weight-normal">Especialidades</h1>
+    </div> <!-- .container -->
+  </div> <!-- .banner-section -->
+</div> <!-- .page-banner -->
+<div class="page-section py-3 mt-md-n5 custom-index">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card-service wow fadeInUp">
+          <div class="circle-shape bg-secondary text-white">
+            <span class="mai-chatbubbles-outline"></span>
+          </div>
+          <p><span>Chat</span> with a doctors</p>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card-service wow fadeInUp">
+          <div class="circle-shape bg-primary text-white">
+            <span class="mai-shield-checkmark"></span>
+          </div>
+          <p><span>One</span>-Health Protection</p>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card-service wow fadeInUp">
+          <div class="circle-shape bg-accent text-white">
+            <span class="mai-basket"></span>
+          </div>
+          <p><span>One</span>-Health Pharmacy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-11 offset-md-0">
+          <div class="card">
+              <div class="card-body">
+                  <table>
+                      <tr>
+                          <td width="200"><h2>Especialidad</h2></td>
+                          {% if user.is_authenticated  %}  
+                          <td>
+                              <a href="{% url 'create_especialidad' %}" class="btn btn-primary btn-sm">
+                                  <i class="fas fa-plus fa-lg" title="Agregar"></i>
+                              </a>
+                          </td>
+                          {% endif %}
+                      </tr>
+                  </table>
+                  <div style="display: flex; justify-content: center;">
+                      <table class="table">
+                          <thead>
+                              <tr>
+                                  <th>Especialidad</th>
+                                  <th>Doctor/a</th>
+                                  <th>Acciones</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              {% for p in especialidad_list %}
+                              <tr>
+                                  <td>{{ p.nombre }}</td>
+                                  <td>{{ p.doctor }}</td>
+                                  <td>        
+                                      <a href="{% url 'detail_especialidad' p.id %}" class="btn btn-info btn-sm">
+                                          <i class="fas fa-search fa-sm" title="Ampliar info"></i>
+                                      </a>
+                                      {% if user.is_authenticated  %} 
+                                      <a href="{% url 'update_especialidad' p.id %}" class="btn btn-primary btn-sm">
+                                          <i class="fas fa-edit fa-sm" title="Editar"></i>
+                                      </a>
+                                      <a href="{% url 'delete_especialidad' p.id %}" class="btn btn-danger btn-sm">
+                                          <i class="fas fa-trash fa-sm" title="Borrar"></i>
+                                      </a>
+                                      {% endif  %} 
+                                  </td>
+                              </tr>
+                              {% endfor %}
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<br>
+
+{% endblock contenido %}

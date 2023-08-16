@@ -1,0 +1,106 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+
+
+{% block titulo %}
+    Cursos
+{% endblock titulo %}
+
+
+{% block cabecera %}
+    Listado de Cursos
+{% endblock cabecera %}
+    
+{% block contenido %}
+<div class="page-banner overlay-dark bg-image" style="background-image: url('{% static "aplicacion/assets/img/bg_image_1.jpg" %}');">
+    <div class="banner-section">
+      <div class="container text-center wow fadeInUp">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
+            <li class="breadcrumb-item"><a href="{% url 'inicio' %}">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">turnos</li>
+          </ol>
+        </nav>
+        <h1 class="font-weight-normal">Portal de Turnos</h1>
+      </div> <!-- .container -->
+    </div> <!-- .banner-section -->
+  </div> <!-- .page-banner -->
+  <div class="page-section py-3 mt-md-n5 custom-index">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card-service wow fadeInUp">
+            <div class="circle-shape bg-secondary text-white">
+              <span class="mai-chatbubbles-outline"></span>
+            </div>
+            <p><span>Chat</span> with a doctors</p>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card-service wow fadeInUp">
+            <div class="circle-shape bg-primary text-white">
+              <span class="mai-shield-checkmark"></span>
+            </div>
+            <p><span>One</span>-Health Protection</p>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card-service wow fadeInUp">
+            <div class="circle-shape bg-accent text-white">
+              <span class="mai-basket"></span>
+            </div>
+            <p><span>One</span>-Health Pharmacy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-11 offset-md-0">
+            <div class="card">
+                <div class="card-body">
+                    <table>
+                        <tr>
+                            <td width="200"><h2>Sacar turnos</h2></td>
+                            <td>
+                                <a href="{% url 'turnoForm' %}" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-plus fa-lg" title="Agregar"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Especialidad</th>
+                                <th>Nombre</th>
+                                <th>DNI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for turno in turnos %}
+                            <tr>
+                                <td>{{ turno.id }}</td>
+                                <td>{{ turno.especialidad }}</td>
+                                <td>{{ turno.nombre }}</td>
+                                <td>{{ turno.dni }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+{% endblock contenido %}
+
+
+
+
+
+    

@@ -1,0 +1,88 @@
+{% extends 'aplicacion/base.html' %}
+{% load static %}
+
+{% block contenido %}
+<div class="page-banner overlay-dark bg-image" style="background-image: url('{% static "aplicacion/assets/img/bg_image_1.jpg" %}');">
+  <div class="banner-section">
+    <div class="container text-center wow fadeInUp">
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">About</li>
+        </ol>
+      </nav>
+      <h1 class="font-weight-normal">About Us</h1>
+    </div> <!-- .container -->
+  </div> <!-- .banner-section -->
+</div> <!-- .page-banner -->
+
+
+<div class="page-section py-3 mt-md-n5 custom-index">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card-service wow fadeInUp">
+          <div class="circle-shape bg-secondary text-white">
+            <span class="mai-chatbubbles-outline"></span>
+          </div>
+          <p><span>Chat</span> with a doctors</p>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card-service wow fadeInUp">
+          <div class="circle-shape bg-primary text-white">
+            <span class="mai-shield-checkmark"></span>
+          </div>
+          <p><span>One</span>-Health Protection</p>
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card-service wow fadeInUp">
+          <div class="circle-shape bg-accent text-white">
+            <span class="mai-basket"></span>
+          </div>
+          <p><span>One</span>-Health Pharmacy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+{% if mensaje %}
+<h4>
+    <p style="color:red" align="center">
+    {{ mensaje }}
+    </p>
+</h4>
+{% endif %}
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-10 offset-md-0">
+          <div class="card">
+              <div class="card-body">
+                  <h2 class="card-title">Acerca de mí</h2>
+                  <div class="d-flex align-items-center">
+                      <img src="{{ request.session.avatar }}" alt="Avatar" style="width: 200px; height: 200px; border-radius: 50%;">
+                      <div class="ml-3">
+                          <p style="color:green; font-size: 24px;"><strong>{{ user.first_name|default:"" }}</strong> <strong>{{ user.last_name|default:"" }}</strong></p>
+                          <h3 class="card-title">Técnico en Diseño gráfico y Publicitario</h3>
+                      </div>
+                  </div>
+                  <p class="card-text">
+                    <br>"Soy un diseñador gráfico de la vieja escuelay en constante formación en programación web. Apasionado por la tecnología, mi enfoque es crear soluciones que mejoren la vida de las personas."<br><br>
+                    Con más de 15 años de experiencia, busco proyectos de tecnología digital para mejorar y crear soluciones en el mercado IT, junto con evaluación innovadora de contenido comercial y de marca.<br><br>
+                    Actualmente, me capacito en Python/Django <strong>(Coderhouse)</strong> y refuerzo conocimientos para una nueva etapa llena de desafíos y logros.<br><br>
+                    <strong>¡Espero encontrarnos pronto para compartir este emocionante viaje!"</strong><br><br>
+                    
+                  </p>
+                  <!-- Resto del contenido de la tarjeta -->
+                  <a class="btn btn-primary ml-lg-3" href="{% url 'editar_perfil' %}">Editar</a>
+                  <a class="btn btn-primary ml-lg-3" href="{% url 'agregar_avatar' %}">Imagen</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+{% endblock contenido %}
+

@@ -1,0 +1,76 @@
+{% extends 'aplicacion/base.html' %} 
+{% load static %} 
+{% block titulo %}Editar Perfil{% endblock titulo %} 
+{% block cabecera %}Editar Perfil {{ usuario }} {% endblock cabecera %} 
+{% block contenido %}
+
+<div class="page-banner overlay-dark bg-image" style="background-image: url('{% static "aplicacion/assets/img/bg_image_1.jpg" %}');">
+    <div class="banner-section">
+      <div class="container text-center wow fadeInUp">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
+            <li class="breadcrumb-item"><a href="{% url 'inicio' %}">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">editarPerfil</li>
+          </ol>
+        </nav>
+        <h1 class="font-weight-normal">Editar Perfil</h1>
+      </div> <!-- .container -->
+    </div> <!-- .banner-section -->
+  </div> <!-- .page-banner -->
+  
+  
+  <div class="page-section py-3 mt-md-n5 custom-index">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card-service wow fadeInUp">
+            <div class="circle-shape bg-secondary text-white">
+              <span class="mai-chatbubbles-outline"></span>
+            </div>
+            <p><span>Chat</span> with a doctors</p>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card-service wow fadeInUp">
+            <div class="circle-shape bg-primary text-white">
+              <span class="mai-shield-checkmark"></span>
+            </div>
+            <p><span>One</span>-Health Protection</p>
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card-service wow fadeInUp">
+            <div class="circle-shape bg-accent text-white">
+              <span class="mai-basket"></span>
+            </div>
+            <p><span>One</span>-Health Pharmacy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+    <br>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-10 offset-md-0">
+              <div class="card">
+                  <div class="card-body">
+                      <form action="" method="POST" style="width: 400px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f7f7f7;">
+                          {% csrf_token %}
+                          <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+                              {{ form.as_table }}
+                          </table>
+                          <div class="d-flex justify-content-center">
+                              <button type="submit" class="btn btn-primary" style="padding: 10px 15px;">Actualizar Usuario</button>
+                              <a class="btn btn-primary ml-3" href="{% url 'perfil' %}">Volver</a>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+
+{% endblock contenido %}
