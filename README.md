@@ -13,8 +13,11 @@ Desarrollo de una aplicación web utilizando el framework Django de Python para 
 
 
 . Se utiliza y se adapta un template de boostrap.<br>
-. Formulario de busqueda al menú que busca los nombres de las especialidades<br>
+. Formulario de busqueda al menú que busca los nombres de las especialidades.<br>
 . Formulario para agregar un turno, para agregar especialidad (con CRUD), registrar usuarios (con CRUD).
+
+## Video de uso:
+https://www.youtube.com/watch?v=wdv2y99-3qU
 
 ## Detalle de los Modelos:
 
