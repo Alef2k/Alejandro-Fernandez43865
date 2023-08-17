@@ -51,6 +51,14 @@
     </div>
   </div> 
     <br>
+    {% if mensaje %}
+<h4>
+    <p style="color:green" align="center">
+    {{ mensaje }}
+    </p>
+</h4>
+{% endif %}
+
     <form action="" method="POST" style="width: 300px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: #f7f7f7;">
         {% csrf_token %}
         <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
@@ -58,4 +66,5 @@
         </table>
         <button type="submit" style="padding: 10px 15px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Crear Usuario</button>
     </form>
+ <br>   
 {% endblock contenido %}

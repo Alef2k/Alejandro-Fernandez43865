@@ -76,15 +76,16 @@
               <a class="nav-link" href="{% url 'inicio' %}">Inicio</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="{% url 'turnos' %}">Turnos</a>
+            </li>            
+            <li class="nav-item">
               <a class="nav-link" href="{% url 'especialidad' %}">Especialidad</a>
             </li> 
             <li class="nav-item">
               <a class="nav-link" href="{% url 'lista_posts' %}">Blog</a>
             </li>
             {% if user.is_authenticated %}  
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'turnos' %}">Turnos</a>
-            </li>                 
+                 
             <li class="nav-item">
               <a class="nav-link" href="{% url 'perfil' %}">Mi Perfil</a>
             </li>
