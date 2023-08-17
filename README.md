@@ -52,7 +52,7 @@ https://www.youtube.com/watch?v=wdv2y99-3qU
   - Imagen: Imagen del avatar.
   - Usuario: Usuario registrado asociado al avatar.
 
-## Casos de test AF (opcion: ver adjunto en el repositorio)
+## Casos de test:
 ![Casos_de_test_AF.xlsx](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/Casos_de_test_AF.jpg)
 
 
