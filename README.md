@@ -4,7 +4,7 @@ Desarrollo de una aplicación web utilizando el framework Django de Python para 
 
 ![captura web](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/captura_web.jpg)
 
-# Secciones de la Web:
+## Secciones de la Web:
 - Inicio 
 - Turno
 - Especialidad
@@ -49,11 +49,11 @@ Desarrollo de una aplicación web utilizando el framework Django de Python para 
   - Imagen: Imagen del avatar.
   - Usuario: Usuario registrado asociado al avatar.
 
-# Casos de test AF (er en repo)
+## Casos de test AF (er en repo)
 ![Casos_de_test_AF.xlsx](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/Casos_de_test_AF.jpg)
 
 
-# Usuario web:
+## Usuario web:
 user: alef2k <br>
 Login: 081076Alef2k
 
