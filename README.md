@@ -1,17 +1,23 @@
 
 # Proyecto Final - CODERHOUSE Comisión 43862
 . Python - Framework Django
-Aplicación web de una clinica "Health-Center" que contiene 5 modelos:<br>
-1 Turno: (Simulación para sacar turno y revisar historial "Requiere estar registado") - Campos: Nombre, DNI, Especialidad.<br>
+Aplicación web de una clinica "Health-Center" con registración de pacientes, sacar turno, modificar su datos con su imagen de Avatar/Perfil, buscar especialidades, implementación logica de los comportamientos de los botones para el login o logout (bloque condicional en DTL). 
 
-2 Especialidad: representa las diferentes especialidades médicas. Tiene los siguientes campos: Nombre: (nombre de la especialidad médica)
-, doctor (almacena el nombre del médico especialista en esta área).<br>
+![captura web](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/captura_web.jpg)
 
 
-3 Categoria: Representa las categorías para los posts de un blog. Campos: nombre, descripcion.<br>
-4 Post: Este modelo representa una publicación en un blog que tiene los siguientes campos: titulo, contenido, fecha_publicacion, autor, categoria (relaciona el pk del modelo Categoria)<br>
 
-5 Avatar: Este modelo representa los avatares de perfil de usuario. Tiene los siguientes campos: imagen, user. <br>
+que contiene 5 modelos:
+<br>
+- Turno: (Simulación para sacar turno y revisar historial "Requiere estar registado") - Campos: Nombre, DNI, Especialidad.
+<br>
+- Especialidad: representa las diferentes especialidades médicas. Tiene los siguientes campos: Nombre: (nombre de la especialidad médica)
+, doctor (almacena el nombre del médico especialista en esta área).
+<br>
+- Categoria: Representa las categorías para los posts de un blog. Campos: nombre, descripcion.<br>
+- Post: Este modelo representa una publicación en un blog que tiene los siguientes campos: titulo, contenido, fecha_publicacion, autor, categoria (relaciona el pk del modelo Categoria)<br>
+
+- Avatar: Este modelo representa los avatares y la imagen de perfil del usuario registrado.<br>
 
 # Secciones de la Web:
 - Inicio 
@@ -21,9 +27,9 @@ Aplicación web de una clinica "Health-Center" que contiene 5 modelos:<br>
 - Mi perfil (Acerca de mí)
 
 
-. Se utilizó un template de boostrap.<br>
-. Se crea y de adapta un form de busqueda a la pagina pagina principal (base.html) que busca los nombres de las especialidades<br>
-. Formularios para agregar un turno, para agregar especialidad (con CRUD), registrar usuarios (con CRUD).
+. Se utiliza y se adapta un template de boostrap.<br>
+. Formulario de busqueda al menú que busca los nombres de las especialidades<br>
+. Formulario para agregar un turno, para agregar especialidad (con CRUD), registrar usuarios (con CRUD).
 
 
 
