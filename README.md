@@ -4,20 +4,6 @@ Desarrollo de una aplicación web utilizando el framework Django de Python para 
 
 ![captura web](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/captura_web.jpg)
 
-
-
-que contiene 5 modelos:
-<br>
-- Turno: (Simulación para sacar turno y revisar historial "Requiere estar registado") - Campos: Nombre, DNI, Especialidad.
-<br>
-- Especialidad: representa las diferentes especialidades médicas. Tiene los siguientes campos: Nombre: (nombre de la especialidad médica)
-, doctor (almacena el nombre del médico especialista en esta área).
-<br>
-- Categoria: Representa las categorías para los posts de un blog. Campos: nombre, descripcion.<br>
-- Post: Este modelo representa una publicación en un blog que tiene los siguientes campos: titulo, contenido, fecha_publicacion, autor, categoria (relaciona el pk del modelo Categoria)<br>
-
-- Avatar: Este modelo representa los avatares y la imagen de perfil del usuario registrado.<br>
-
 # Secciones de la Web:
 - Inicio 
 - Turno
@@ -30,6 +16,41 @@ que contiene 5 modelos:
 . Formulario de busqueda al menú que busca los nombres de las especialidades<br>
 . Formulario para agregar un turno, para agregar especialidad (con CRUD), registrar usuarios (con CRUD).
 
+## Detalle de los Modelos:
+
+### Turno:
+- Propósito: Simulación para solicitar turnos médicos y revisar el historial (requiere registro).
+- Campos: Nombre, DNI, Especialidad.
+
+### Especialidad:
+- Propósito: Representa diversas especialidades médicas.
+- Campos: 
+  - Nombre: Nombre de la especialidad médica.
+  - Doctor: Nombre del médico especialista en dicha área.
+
+### Categoria:
+- Propósito: Representa las categorías para las publicaciones de un blog.
+- Campos: 
+  - Nombre: Nombre de la categoría.
+  - Descripcion: Descripción de la categoría.
+
+### Post:
+- Propósito: Modelo para las publicaciones de un blog.
+- Campos: 
+  - Título: Título de la publicación.
+  - Contenido: Contenido del post.
+  - Fecha de Publicación: Fecha y hora de la publicación.
+  - Autor: Autor de la publicación.
+  - Categoría: Relaciona con el modelo Categoria mediante su clave primaria.
+
+### Avatar:
+- Propósito: Representa los avatares e imágenes de perfil de usuarios registrados.
+- Campos:
+  - Imagen: Imagen del avatar.
+  - Usuario: Usuario registrado asociado al avatar.
+
+# Casos de test AF
+![Casos_de_test_AF.xlsx](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/Casos_de_test_AF.xlsx)
 
 
 # Usuario web:
@@ -59,8 +80,6 @@ escribir en la terminal
 
 4. Ingresa en el Browser de tu preferencia e ingresa a la siguiente dirección: 
 > `http:\\localhost:8000`
-
-
 
 Listo!!! ya tenemos funcionando nuestra App.
 
