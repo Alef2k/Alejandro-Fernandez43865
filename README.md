@@ -16,9 +16,6 @@ Desarrollo de una aplicación web utilizando el framework Django de Python para 
 . Formulario de busqueda al menú que busca los nombres de las especialidades.<br>
 . Formulario para agregar un turno, para agregar especialidad (con CRUD) y registrar usuarios (con CRUD).
 
-## Video de uso:
-https://www.youtube.com/watch?v=wdv2y99-3qU
-
 ## Detalle de los Modelos:
 
 ### Turno:
@@ -55,6 +52,8 @@ https://www.youtube.com/watch?v=wdv2y99-3qU
 ## Casos de test:
 ![Casos_de_test_AF.xlsx](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/Casos_de_test_AF.jpg)
 
+## Video de uso:
+https://www.youtube.com/watch?v=wdv2y99-3qU
 
 ## Usuario web:
 user: alef2k <br>
