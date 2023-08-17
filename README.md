@@ -49,7 +49,7 @@ Desarrollo de una aplicación web utilizando el framework Django de Python para 
   - Imagen: Imagen del avatar.
   - Usuario: Usuario registrado asociado al avatar.
 
-## Casos de test AF (er en repo)
+## Casos de test AF (opcion: ver adjunto en el repositorio)
 ![Casos_de_test_AF.xlsx](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/Casos_de_test_AF.jpg)
 
 
@@ -87,7 +87,7 @@ Listo!!! ya tenemos funcionando nuestra App.
 ## BASE DE DATOS 
 Base de datos `(bd_clinica.db)` 
 
-## Info entorno de trabajo:
+## Entorno de trabajo:
 #### Python 3.11.4
 #### Django 4.2.4
 
