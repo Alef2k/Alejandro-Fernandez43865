@@ -123,6 +123,8 @@ Base de datos `(bd_clinica.db)`
 # Desarrollador del proyecto 👩‍💻
 Alejandro Fernandez
 https://github.com/Alef2k <br>
-Contactame: alef2k@hotmail.com  
-
+Contactame: alef2k@hotmail.com 
+<p align="left"> 
+<a href="https://www.linkedin.com/in/ale-fer" target="_blank" rel="noreferrer"> https://www.linkedin.com/in/ale-fer <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="python" width="15" height="15"/> </a> 
+</p>
 
