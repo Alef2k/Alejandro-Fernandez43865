@@ -53,7 +53,7 @@ Desarrollo de una aplicación web utilizando el framework Django de Python para 
 ![Casos_de_test_AF.xlsx](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/Casos_de_test_AF.jpg)
 
 ## Video de uso:
-https://www.youtube.com/watch?v=wdv2y99-3qU
+https://youtu.be/oY3e_-Wi9I8
 
 ## Usuario web:
 user: alef2k <br>
