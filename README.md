@@ -2,7 +2,7 @@
 # Proyecto Final - CODERHOUSE Comisión 43862
 Desarrollo de una aplicación web utilizando el framework Django de Python para una clínica denominada 'Health-Center'. La aplicación ofrece diversas funcionalidades, entre las que se incluyen registro de pacientes, solicitud de turnos médicos, edición de información personal con opción de agregar una imagen de perfil/avatar, búsqueda de especialidades médicas y una implementación lógica de la interacción de botones para realizar el inicio de sesión o cierre de sesión, usando bloques condicionales en Django Template Language (DTL). 
 
-![captura web](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/captura_web.jpg)
+![captura web](https://github.com/Alef2k/Alejandro-Fernandez43865/blob/master/captura_web1.jpg)
 
 ## Secciones de la Web:
 - Inicio 
