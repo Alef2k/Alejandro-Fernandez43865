@@ -94,11 +94,7 @@ Base de datos `(bd_clinica.db)`
 #### Django 4.2.4
 
 #### Package  Version:
-- asgiref  3.7.2 
-- Django   4.2.4
-- Pillow   10.0.0
-- sqlparse 0.4.4
-- tzdata   2023.3
+- Django 4.2.4 / Pillow 10.0.0 / sqlparse 0.4.4 / tzdata 2023.3
 
 # Tecnologías utilizadas 🔨
 <p align="left"> 
